@@ -209,6 +209,7 @@ export default (variables = variable) => {
 		flexDirection: 'row',
 		alignItems: 'center',
 		marginLeft: 2,
+		marginTop : 17, // add as new
 	};
 
 	return itemTheme;
