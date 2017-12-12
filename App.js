@@ -1,7 +1,7 @@
 import React from "react";
 import {StackNavigator} from 'react-navigation';
 import { StatusBar } from "react-native";
-import { Content, Container, Button,Footer,Input,FooterTab,text, Item,ListItem, Text, Drawer, Thumbnail, Header, Left, StyleProvider, Body, Title, List,Tabs,Tab,TabHeading,Icon,View} from "native-base";
+import { Content, Container, Button,Footer,Input,FooterTab,text, Item,ListItem, Text, Drawer,Fab, Thumbnail, Header, Left, StyleProvider, Body, Title, List,Tabs,Tab,TabHeading,Icon,View} from "native-base";
 import Expo from "expo";
 import SideBar from './Menu.js';
 import getTheme from './native-base-theme/components';
@@ -50,6 +50,14 @@ class HomeTab extends React.Component {
         ref={(ref) => { this._drawer = ref; }}
         content={<SideBar navigator={this._navigator} />}
         onClose={() => this.closeDrawer()}>
+          <Fab
+           
+            style={{ backgroundColor: '#5067FF' }}
+            position="bottomRight"
+            >
+            <Icon name="ios-leaf-outline" />
+           </Fab>
+       
 
       <StatusBar hidden = {true} />
       
@@ -64,8 +72,9 @@ class HomeTab extends React.Component {
           <Text bold>Home</Text>
         </Button>
         </Left>
+        
        </Header>
-      
+       <Content>
        
          <Tabs>
           <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
@@ -83,9 +92,12 @@ class HomeTab extends React.Component {
             
           </Tab>
         </Tabs>
-       
+
+          
+        </Content>
+
       <Footer>
-       
+         
        
           <Button transparent>
            <Text>{`All`}</Text>
