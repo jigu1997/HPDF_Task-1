@@ -307,6 +307,7 @@ export default (variables = variable) => {
         shadowOpacity: null,
         
     },
+    marginTop : 15,   // added as new
     backgroundColor: variables.toolbarDefaultBg,
     flexDirection: "row",
     paddingHorizontal: 10,
