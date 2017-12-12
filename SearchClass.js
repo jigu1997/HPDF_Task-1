@@ -15,8 +15,9 @@ import material from './native-base-theme/variables/material';
   const {goBack} = this.props.navigation;
  
   return(
+  <StyleProvider style={getTheme(material)}>
    <Container>
-        
+        <Header AppMain> 
           <Item>
              <Icon name="ios-arrow-round-back" onPress={() => goBack()}/>
             <Input placeholder="Search Twitter" />
@@ -25,8 +26,11 @@ import material from './native-base-theme/variables/material';
           <Button transparent>
             
           </Button>
+          </Header>
+
         
       </Container>
+    </StyleProvider>
     );
  }
 
