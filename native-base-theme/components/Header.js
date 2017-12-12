@@ -329,3 +329,4 @@ export default (variables = variable) => {
 
   return headerTheme;
 };
+
