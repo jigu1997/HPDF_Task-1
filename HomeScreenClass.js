@@ -1,7 +1,7 @@
 import React from "react";
 import {StackNavigator,TabNavigator} from 'react-navigation';
 import { StatusBar } from "react-native";
-import { Content, Container, Button,Badge,Footer,FooterTab,View,ListItem,Image,Text,Fab, Drawer, Thumbnail, Header, Left, StyleProvider, Body, Title, List,Tabs,Tab,TabHeading,Icon} from "native-base";
+import { Content, Container, Button,Badge,Footer,FooterTab,View,ListItem,Image,Right,Text,Fab, Drawer, Thumbnail, Header, Left, StyleProvider, Body, Title, List,Tabs,Tab,TabHeading,Icon} from "native-base";
 import getTheme from './native-base-theme/components';
 import material from './native-base-theme/variables/material';
 import SideBar from './Menu.js';
@@ -11,7 +11,6 @@ export default class HomeScreenClass extends React.Component {
    render(){
    	return(
    	
-      <Container>
    		<List>
 
    		 <ListItem>
@@ -61,11 +60,10 @@ export default class HomeScreenClass extends React.Component {
    		   <ListItem noBorder>
    		    <Thumbnail medium source={require('./src/wanderlust.jpg')} />
             <Text extraBold>{` Wanderers `}</Text>
-   		    <Badge style={{ backgroundColor: '#87cefa' }}>
-   		    	<Icon name="ios-checkmark" />
-   		    </Badge>
+   		   
    		    <Text note>{`  @travel_lust23  .  24m  `}</Text>
-   		    <Icon drop name='ios-arrow-down-outline' />
+   		  
+            <Icon drop name='ios-arrow-down-outline' />
    		   </ListItem>
    		   <ListItem noBorder>
    		   <Text>Explore the Beauty of Lake in the Nainital City</Text>
@@ -94,18 +92,8 @@ export default class HomeScreenClass extends React.Component {
    		  </List>
    		 </ListItem>
 
-
    		</List>
-          <Fab
-           
-            style={{ backgroundColor: '#5067FF' }}
-            position="bottomRight"
-            >
-            <Icon name="ios-leaf-outline" />
-           </Fab>
-
-           </Container>
-   
+        
    		);
    }
    
