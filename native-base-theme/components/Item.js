@@ -178,6 +178,7 @@ export default (variables = variable) => {
 			'.rounded': {
 				borderRadius: 30,
 				borderColor: variables.inputErrorBorderColor,
+	
 			},
 			'.regular': {
 				borderColor: variables.inputErrorBorderColor,
@@ -209,7 +210,8 @@ export default (variables = variable) => {
 		flexDirection: 'row',
 		alignItems: 'center',
 		marginLeft: 2,
-		marginTop : 17, // add as new
+		width : 400//added new
+	 
 	};
 
 	return itemTheme;
