@@ -53,6 +53,7 @@ class HomeTab extends React.Component {
           <Fab
            
             style={{ backgroundColor: '#5067FF' }}
+            containerStyle={{bottom: 65}}
             position="bottomRight"
             >
             <Icon name="ios-leaf-outline" />
